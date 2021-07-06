@@ -433,7 +433,11 @@ main {
 /***********************************          DEVELOPER SECTION        *********************************/
 .developer-section {
     background-color: #1e1e1e;
-    padding-bottom: 40px;
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-position: -37% 100%;
+    background-size: 50%;
+    padding-bottom: 100px;
 }
 
 .developer-wrapper {
@@ -555,11 +559,233 @@ main {
 
 
 
+/*********************************          INVESTORS SECTION       *************************/
+.investors-section{
+    margin-top: 0px;
+    padding-bottom: 60px;
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-position: -50% 100%;
+    background-size: 58%;
+}
+
+.investors-wrapper{
+    color: #fff;
+    max-width: 1100px;
+    margin: -40px auto 0 auto;
+    padding: 0px 30px 60px 60px;
+}
+
+.investors-wrapper .investors-heading{
+    padding-left: 0px;
+}
+
+.investors-wrapper .investors-heading h2{
+    font-size: 24px;
+    font-family: 'Montserrat-Regular';
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-top: 25px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.investors-wrapper .investors-heading h2::before{
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 20px;
+    background-color: #fea800;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.investors-wrapper .investors-heading p{
+    font-size: 14px;
+    font-family: 'Montserrat-Regular';
+    color: #fff;
+}
+
+
+
+
+
+
+
+/*********************************          ACCORDION WRAPPER       *************************/
+.accordion-wrapper{
+    color: #fff;
+    max-width: 1100px;
+    margin: -40px auto 0 auto;
+    padding: 0px 0px 60px 0px;
+}
+.accordion{
+    width: 100%;
+    margin: 32px auto;
+}
+.accordion-item{
+    background-color: transparent;
+    color: #111;
+    margin: 10px 0;
+}
+
+.accordion-item-header {
+    height: 70px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Montserrat-Regular';
+    font-weight: bold;
+    color: #fff;
+    background-color: #383838;
+    padding-left: 5%;
+}
+.accordion-item-header::after {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f078";
+    font-size: 16px;
+    position: absolute;
+    padding: 4px 3px;
+    right: 40px;
+    color: #fea501;
+}
+.accordion-item-header.active::after{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f077";
+    font-size: 16px;
+    position: absolute;
+    padding: 4px 3px;
+    right: 40px;
+    color: #fea501;
+}
+.accordion-item-body{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+.accordion-item-body-content {
+    padding: 10px 15px;
+    text-align: justify;
+    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+    background: transparent;
+    color: #fff;
+    font-family: 'Montserrat-Regular';
+    font-size: 16px;
+    font-weight: 400;
+}
+.accordion-item-body-content ul{
+    list-style: none;
+}
+.accordion-item-body-content ul li{
+    line-height: 14px;
+}
+.accordion-item-body-content ul li:hover{
+    color: #fea501;
+}
+.accordion-item-body-content ul li::before {
+    content: "\2022";
+    color: #fea501;
+    font-size: 32px;
+    font-weight: bold;
+    display: inline-block; 
+    width: 25px;
+    margin-top: 16px;
+    margin-left: -16px;
+}
+.accordion-item-body-content ul li:nth-child(2){
+    color: #fea501;
+}
+
+
+
+
+
+
+/*********************************          DEBENTURE WRAPPER       *************************/
+.debenture-wrapper{
+    background-color: #383838;
+    color: #fff;
+    max-width: 1100px;
+    margin: -40px auto 0 auto;
+    padding: 30px 0px 20px 60px;
+}
+.debenture-wrapper .debenture-text h3{
+    font-size: 18px;
+    font-family: 'Montserrat-Regular';
+    font-weight: bold;
+    color: #fea500;
+    padding: 10px 0px;
+}
+.debenture-wrapper .debenture-text p{
+    font-family: 'Montserrat-Regular';
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 8px;
+}
+.debenture-wrapper .debenture-text p span{
+    margin-right: 15px;
+}
+
+
+
+
+
+/*********************************          REDRESSAL WRAPPER       *************************/
+.redressal-wrapper{
+    background-color: #383838;
+    color: #fff;
+    max-width: 1100px;
+    margin: 50px auto 0px auto;
+    padding: 30px 45px 20px 60px;
+}
+.redressal-wrapper .redressal-text h3{
+    font-size: 18px;
+    font-family: 'Montserrat-Regular';
+    font-weight: bold;
+    color: #fea500;
+    padding: 10px 0px;
+}
+.redressal-wrapper .redressal-text p{
+    font-family: 'Montserrat-Regular';
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 22px;
+}
+.redressal-wrapper .redressal-text .address{
+    margin-top: 35px;
+}
+.redressal-wrapper .redressal-text .address p{
+    font-family: 'Montserrat-Regular';
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 8px;
+}
+.redressal-wrapper .redressal-text .address p span{
+    margin-right: 15px;
+}
+
+
+
+
+
+
+
+
+
 
 /*********************************          Responsive Design       *************************/
 @media (max-width: 1230px) {
     .content {
         padding: 0 60px;
+    }
+    .accordion, .debenture-wrapper, .redressal-wrapper{
+        width: 90%;
     }
 }
 
@@ -585,6 +811,11 @@ main {
     .slider-wrapper,
     .developer{
         width: 100%;
+    }
+    .redressal-wrapper .redressal-text .address p,
+    .redressal-wrapper .redressal-text p,
+    .debenture-wrapper .debenture-text p{
+        line-height: normal;
     }
 }
 
@@ -725,15 +956,31 @@ main {
     .yoopune {
         display: none;
     }
-    .management-wrapper, .project-wrapper, .developer-wrapper {
+    .management-wrapper, .project-wrapper, .developer-wrapper, .investors-wrapper, .debenture-wrapper, .redressal-wrapper {
         padding: 0px 25px 60px 25px;
     }
     .slider-wrapper {
         height: 500px;
     }
+    .investors-wrapper{
+        padding-bottom: 55px;
+    }
     .developer p {
         padding-left: 0px;
     }
+    .accordion-item-header {
+        height: 60px;
+    }
+    .accordion-item-body-content ul li {
+        line-height: normal;
+        font-size: 12px;
+    }
+    .redressal-wrapper .redressal-text .address p,
+    .redressal-wrapper .redressal-text p,
+    .debenture-wrapper .debenture-text p{
+        font-size: 13px;
+    }
+    
 }
 
 @media (max-width: 450px) {
@@ -746,14 +993,30 @@ main {
     .banner-wrapper h1 {
         font-size: 34px;
     }
-    .management-wrapper, .project-wrapper, .developer-wrapper {
+    .management-wrapper, .project-wrapper, .developer-wrapper, .investors-wrapper {
         padding: 0px 15px 60px 15px;
+    }
+    .redressal-wrapper, .debenture-wrapper {
+        padding: 25px 10px 25px 15px;
     }
     .slider-wrapper {
         height: 400px;
     }
     .developer p {
         font-size: 12px;
+    }
+    .investors-wrapper .investors-heading p {
+        text-align: justify;
+    }
+    .accordion, .debenture-wrapper, .redressal-wrapper {
+        width: 93%;
+    }
+    .accordion-item-header{
+        font-size: 13px;
+    }
+    .accordion-item-header::after,
+    .accordion-item-header.active::after{
+        right: 10px;
     }
 }
 
