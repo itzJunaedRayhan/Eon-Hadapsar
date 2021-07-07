@@ -1048,6 +1048,7 @@ main {
 
 .contact-wrapper .contract {
     padding-left: 50px;
+    padding-bottom: 25px;
 }
 
 .contact-wrapper .contract h6 {
@@ -1349,6 +1350,10 @@ main {
     .contact-wrapper .contract h3 {
         font-size: 24px;
         padding-left: 8px;
+        padding-bottom: 0px;
+    }
+    .contact-wrapper .contract h5 {
+        padding: 0px 10px 2px 10px;
     }
     .question-wrapper {
         margin-top: 35px;
@@ -1377,6 +1382,12 @@ main {
     }
     .slider-wrapper {
         height: 400px;
+    }    
+    .north {
+        min-height: 800px;
+    }
+    .know-btn{
+        margin-top: 30px;
     }
     .developer p {
         font-size: 12px;
@@ -1429,9 +1440,6 @@ main {
 @media (max-width: 350px) {
     .banner-wrapper h1 {
         font-size: 28px;
-    }
-    .north {
-        height: 800px;
     }
     .north p {
         text-align: justify;
