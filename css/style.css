@@ -776,7 +776,249 @@ main {
 
 
 
+/*********************************          GALLERY WRAPPER       *************************/
+.gallery-section{
+    padding-bottom: 100px;
+}
+.gallery-wrapper{
+    background-color: #383838;
+    color: #fff;
+    max-width: 1100px;
+    margin: 20px auto 0px auto;
+}
 
+.gallery-wrapper h2{
+    font-size: 24px;
+    font-family: 'Montserrat-Regular';
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-top: 25px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 30px 60px 20px 60px;
+}
+
+.gallery-wrapper h2::before{
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 20px;
+    background-color: #fea800;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.gallery-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 60px 0px 60px;
+    background-color: #383838;
+    position: relative;
+}
+
+.image-gallery {
+    margin: auto;
+    width: 100%;
+    position: relative;
+}
+
+.image-container {
+    width: 100%;
+    height: 550px;
+    position: relative;
+}
+
+.thumbnails {
+    width: 100%;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+
+.thumbnails label {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    background-size: cover;
+    margin: 0;
+    flex: 1 1 150px;
+    cursor: pointer;
+}
+
+.image-1, .image-2, .image-3, .image-4, .image-5, .image-6, .image-7, .image-8, .image-9 {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: all 1.2s ease-out;
+}
+
+.image-1, .thumbnails label[for="image1"] {
+    background-image: url('../images/Gallery/Gallery.png');
+}
+
+.image-2, .thumbnails label[for="image2"] {
+    background-image: url('../images/Gallery/Gallery-2.png');
+}
+
+.image-3, .thumbnails label[for="image3"] {
+    background-image: url('../images/Gallery/Gallery-3.png')
+}
+
+.image-4, .thumbnails label[for="image4"] {
+    background-image: url('../images/Gallery/Gallery-4.png');
+}
+
+.image-5, .thumbnails label[for="image5"] {
+    background-image: url('../images/Gallery/Gallery-5.png');
+}
+
+.image-6, .thumbnails label[for="image6"] {
+    background-image: url('../images/Gallery/Gallery-6.png');
+}
+
+.image-7, .thumbnails label[for="image7"] {
+    background-image: url('../images/Gallery/Gallery-7.png');
+}
+
+.image-8, .thumbnails label[for="image8"] {
+    background-image: url('../images/Gallery/Gallery-8.png');
+}
+
+.image-9, .thumbnails label[for="image9"] {
+    background-image: url('../images/Gallery/Gallery-9.png');
+}
+
+#image1:checked+.image-1, #image2:checked+.image-2, #image3:checked+.image-3, #image4:checked+.image-4, #image5:checked+.image-5, #image6:checked+.image-6, #image7:checked+.image-7, #image8:checked+.image-8, #image9:checked+.image-9 {
+    opacity: 1;
+}
+
+.image-gallery input[type="radio"] {
+    position: absolute;
+    top: 370px;
+    z-index: 100;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: none;
+    background-color: #00000033;
+    height: 16px;
+    width: 16px;
+    border: 3px solid #f1f1f1;
+    border-radius: 16px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 1px 4px #00000088;
+}
+
+.image-gallery input[type="radio"]:hover {
+    background-color: #f7f7f780;
+}
+
+.image-gallery input[type="radio"]:checked {
+    background-color: #f1f1f1;
+}
+
+.image-gallery input[type="radio"]:nth-of-type(1) {
+    left: 50%;
+    margin-left: -36px;
+}
+
+.image-gallery input[type="radio"]:nth-of-type(2) {
+    left: 50%;
+    margin-left: -12px;
+}
+
+.image-gallery input[type="radio"]:nth-of-type(3) {
+    left: 50%;
+    margin-left: 12px;
+}
+
+.image-gallery input[type="radio"]:nth-of-type(4) {
+    left: 50%;
+    margin-left: 36px;
+}
+
+.image-gallery input[type="radio"]:nth-of-type(5) {
+    left: 50%;
+    margin-left: 36px;
+}
+
+.image-gallery input[type="radio"]:nth-of-type(6) {
+    left: 50%;
+    margin-left: 36px;
+}
+
+.image-gallery input[type="radio"]:nth-of-type(7) {
+    left: 50%;
+    margin-left: 36px;
+}
+
+.image-gallery input[type="radio"]:nth-of-type(8) {
+    left: 50%;
+    margin-left: 36px;
+}
+
+.image-gallery input[type="radio"]:nth-of-type(9) {
+    left: 50%;
+    margin-left: 36px;
+}
+
+.image-gallery label.prev, .image-gallery label.next {
+    position: absolute;
+    top: 50%;
+    z-index: 0;
+    background-color: #ffa500;
+    color: #f1f1f1;
+    font-size: 24px;
+    font-weight: 700;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-gallery:hover label.prev, .image-gallery:hover label.next {
+    opacity: 1;
+}
+
+.image-gallery label.prev:before {
+    content: '\2190'
+}
+
+.image-gallery label.next:before {
+    content: '\2192'
+}
+
+.image-gallery label.prev {
+    left: -5%;
+}
+
+.image-gallery label.next {
+    right: -5%;
+}
+
+.image-gallery label.prev:hover, .image-gallery label.next:hover {
+    margin-top: -22px;
+    text-shadow: 0px 3px 4px #00000088;
+}
+
+.image-1 figcaption, .image-2 figcaption, .image-3 figcaption, .image-4 figcaption, .image-5 figcaption, .image-6 figcaption, .image-7 figcaption, .image-8 figcaption, .image-9 figcaption {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    padding: 15px;
+    background-color: rgba(60, 52, 46, 0.6);
+    font-size: 15px;
+    color: #fff;
+}
 
 
 /*********************************          Responsive Design       *************************/
@@ -903,6 +1145,15 @@ main {
     .slider-wrapper{
         min-width: 100%;
     }
+    .image-container {
+        height: 440px;
+    }
+    .image-gallery label.prev {
+        left: -8%;
+    }
+    .image-gallery label.next {
+        right: -8%;
+    }
 }
 
 @media (min-width: 600px) and (max-width: 800px) {
@@ -956,8 +1207,11 @@ main {
     .yoopune {
         display: none;
     }
-    .management-wrapper, .project-wrapper, .developer-wrapper, .investors-wrapper, .debenture-wrapper, .redressal-wrapper {
+    .management-wrapper, .project-wrapper, .developer-wrapper, .investors-wrapper, .debenture-wrapper, .redressal-wrapper{
         padding: 0px 25px 60px 25px;
+    }
+    .redressal-wrapper, .gallery-wrapper h2 {
+        padding: 45px 25px 35px 25px;
     }
     .slider-wrapper {
         height: 500px;
@@ -980,7 +1234,18 @@ main {
     .debenture-wrapper .debenture-text p{
         font-size: 13px;
     }
-    
+    .gallery-content{
+        padding: 0px 25px 0px 25px !important;
+        margin: 0 12px;
+    }
+    .thumbnails label{
+        height: 70px !important;
+    }
+    .image-gallery label.prev, .image-gallery label.next {
+        height: 30px;
+        width: 30px;
+        margin: 0 10px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -1018,8 +1283,48 @@ main {
     .accordion-item-header.active::after{
         right: 10px;
     }
+    .image-container {
+        width: 94%;
+        margin-left: 3%;
+        height: 265px;
+    }
+    .image-gallery label.prev, .image-gallery label.next{
+        width: 25px;
+        height: 25px;
+    }
+    .image-gallery label.prev {
+        left: -14%;
+    }
+    .image-gallery label.next {
+        right: -14%;
+    }
+    .image-1 figcaption, .image-2 figcaption, .image-3 figcaption, .image-4 figcaption, .image-5 figcaption, .image-6 figcaption, .image-7 figcaption, .image-8 figcaption, .image-9 figcaption {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+    .thumbnails label{
+        height: 50px !important;
+    }
 }
-
+@media (max-width: 390px) {
+    .image-container {
+        width: 92%;
+        margin-left: 4%;
+        height: 250px;
+    }
+    .gallery-content {
+        padding: 0px 12px 0px 12px !important;
+        margin: 0 12px;
+    }
+    .image-gallery label.prev {
+        left: -12%;
+        margin-left: 12px;
+    }
+    .image-gallery label.next {
+        right: -12%;
+        margin-right: 12px;
+    }
+}
 @media (max-width: 350px) {
     .banner-wrapper h1 {
         font-size: 28px;
@@ -1029,5 +1334,13 @@ main {
     }
     .north p {
         text-align: justify;
+    }
+    .image-gallery label.prev {
+        left: -16%;
+        margin-left: 12px;
+    }
+    .image-gallery label.next {
+        right: -16%;
+        margin-right: 12px;
     }
 }
