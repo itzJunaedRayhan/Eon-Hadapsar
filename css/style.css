@@ -38,7 +38,7 @@ header {
     background-color: #383838;
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 99999999;
     transition: all 0.3s ease;
     margin: 0;
     padding: 0;
@@ -946,6 +946,7 @@ main {
   .image-gallery label.next {
     position: absolute;
     top: 50%;
+    z-index: 100;
     color: #fff;
     background-color: #fea500;
     font-size:30px;
@@ -1288,7 +1289,7 @@ main {
     .image-gallery label.next {
         position: absolute;
         top: 50%;
-        z-index: 0;
+        z-index: 120;
         color: #fff;
         background-color: #fea500;
         font-size: 30px;
