@@ -972,13 +972,6 @@ main {
     right: 10px;
   }
   
-
-
-
-
-
-
-
 .image-1 figcaption, .image-2 figcaption, .image-3 figcaption, .image-4 figcaption, .image-5 figcaption, .image-6 figcaption, .image-7 figcaption, .image-8 figcaption, .image-9 figcaption {
     width: 100%;
     position: absolute;
@@ -1259,9 +1252,9 @@ main {
         padding-right: 0px;
     }
     .image-gallery label.prev, .image-gallery label.next {
-        height: 25px;
-        width: 25px;
-        line-height: 18px;
+        height: 35px;
+        width: 35px;
+        line-height: 16px;
     }
     .image-1 figcaption, .image-2 figcaption, .image-3 figcaption, .image-4 figcaption, .image-5 figcaption, .image-6 figcaption, .image-7 figcaption, .image-8 figcaption, .image-9 figcaption {
         font-size: 11px;
