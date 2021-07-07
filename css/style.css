@@ -946,7 +946,6 @@ main {
   .image-gallery label.next {
     position: absolute;
     top: 50%;
-    z-index: 100;
     color: #fff;
     background-color: #fea500;
     font-size:30px;
@@ -1254,7 +1253,7 @@ main {
     .image-gallery label.prev, .image-gallery label.next {
         height: 35px;
         width: 35px;
-        line-height: 17px;
+        line-height: 28px;
     }
     .image-1 figcaption, .image-2 figcaption, .image-3 figcaption, .image-4 figcaption, .image-5 figcaption, .image-6 figcaption, .image-7 figcaption, .image-8 figcaption, .image-9 figcaption {
         font-size: 11px;
@@ -1289,7 +1288,7 @@ main {
     .image-gallery label.next {
         position: absolute;
         top: 50%;
-        z-index: 120;
+        z-index: 0;
         color: #fff;
         background-color: #fea500;
         font-size: 30px;
