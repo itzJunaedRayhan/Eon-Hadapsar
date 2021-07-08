@@ -1608,6 +1608,15 @@ footer .footer-wrapper {
         width: 100%;
         padding: 0px 10px;
     }
+    .footer-wrapper {
+        justify-content: center !important;
+        padding: 10px 5px;
+    }
+    .footer-wrapper .footer-text .copyright p a {
+        font-size: 14px;
+        color: #fea500;
+        font-weight: bold;
+    }
 }
 
 @media (max-width: 390px) {
