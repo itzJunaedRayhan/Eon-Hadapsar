@@ -1254,11 +1254,7 @@ footer .footer-wrapper {
     margin-right: 20px;
 }
 
-.footer-wrapper .footer-text .copyright p a {
-    font-size: 17px;
-    color: #fea500;
-    font-weight: bold;
-}
+
 
 
 
@@ -1611,11 +1607,6 @@ footer .footer-wrapper {
     .footer-wrapper {
         justify-content: center !important;
         padding: 10px 5px;
-    }
-    .footer-wrapper .footer-text .copyright p a {
-        font-size: 14px;
-        color: #fea500;
-        font-weight: bold;
     }
     .footer-wrapper .footer-logo{
         width: 45px;
