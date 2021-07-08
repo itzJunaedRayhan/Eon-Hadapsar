@@ -1141,23 +1141,6 @@ form{
     background: transparent;
     transition: all 0.8s ease;
 }
-.form-group input[type = "text"]:focus,
-.form-group input[type = "email"]:focus,
-.form-group textarea:focus{
-    border-color: #fea500;
-    color: #fea500;
-    font-size: 16px;
-    font-weight: 600;
-}
-.form-group input::placeholder,
-.form-group textarea::placeholder{
-    transform:  translateY(0px) scale(1);
-    transition: all 0.4s ease;
-}
-.form-group input:focus::placeholder, .form-group textarea:focus::placeholder{
-    transform: translateY(-15px) scale(0.8);
-    outline: none;
-}
 
 .form-group textarea{
     width: 100%;
@@ -1177,6 +1160,27 @@ form{
     margin: 0px 10px;
     padding-top: 40px;
 }
+
+.form-group input[type = "text"]:focus,
+.form-group input[type = "email"]:focus,
+.form-group textarea:focus{
+    border-color: #fea500;
+    color: #fea500;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder{
+    transform:  translateY(0px) scale(1);
+    transition: all 0.4s ease;
+}
+
+.form-group input:focus::placeholder, .form-group textarea:focus::placeholder{
+    transform: translateY(-15px) scale(0.8);
+    outline: none;
+}
+
 .submit-btn{
     width: 170px;
     height: 45px;
@@ -1200,6 +1204,53 @@ form{
 }
 
 
+
+
+
+
+/*********************************          FOOTER SECTION        *************************/
+footer{
+    background-color: #383838;
+    color: #fff;
+}
+footer .footer-wrapper{
+    max-width: 1100px;
+    min-height: 120px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-wrapper .footer-logo{
+    width: 70px;
+    height: 70px;
+    margin-left: 30px;
+}
+.footer-wrapper .footer-logo img{
+    height: 100%;
+    width: 100%;
+}
+.footer-wrapper .footer-text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-right: 30px;
+    align-items: center;
+    font-size: 14px;
+    font-family: 'Montserrat-Regular';
+    font-weight: 300;
+}
+.footer-wrapper .footer-text .copyright p{
+    margin-right: 20px;
+}
+.footer-wrapper .footer-text .copyright p a{
+    font-size: 17px;
+    color: #fea500;
+    font-weight: bold;
+}
 
 
 
@@ -1241,6 +1292,9 @@ form{
     .form-group {
         width: 100%;
         padding: 0px 50px;
+    }
+    .footer-text{
+        margin-left: 25px;
     }
 }
 
@@ -1327,6 +1381,17 @@ form{
     }
     .slider-wrapper {
         min-width: 100%;
+    }
+    .footer-wrapper{
+        justify-content: center !important;
+        padding: 25px 10px;
+    }
+    .footer-logo{
+        margin-left: 0px !important;
+    }
+    .footer-wrapper .footer-text{
+        justify-content: center;
+        font-size: 13px;
     }
 }
 
