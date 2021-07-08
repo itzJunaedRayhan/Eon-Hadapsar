@@ -207,6 +207,7 @@ main {
     font-family: 'Montserrat-Regular';
     font-weight: bold;
     padding-bottom: 25px;
+    padding-top: 15px;
     margin-top: 25px;
 }
 
@@ -255,7 +256,7 @@ main {
     padding: 0px 60px 100px 60px;
 }
 
-.management-wrapper .col-md-4{
+.management-wrapper .col-md-4 {
     padding-left: 7px !important;
     padding-right: 7px !important;
 }
@@ -1000,6 +1001,7 @@ main {
 
 
 
+
 /*********************************          Responsive Design       *************************/
 .contact-section {
     width: 100%;
@@ -1110,20 +1112,23 @@ main {
     font-weight: 600;
     color: #fea500;
 }
-form{
+
+form {
     padding-bottom: 60px;
 }
-.form-group{
+
+.form-group {
     width: 100%;
-    padding: 0px 100px ;
+    padding: 0px 100px;
 }
-.form-group .col-md-4{
+
+.form-group .col-md-4 {
     padding-left: 7px !important;
     padding-right: 7px !important;
     margin-bottom: 15px !important;
 }
-.form-group input[type = "text"],
-.form-group input[type = "email"]{
+
+.form-group input[type="text"], .form-group input[type="email"] {
     width: 100%;
     background-color: transparent;
     outline: none;
@@ -1142,7 +1147,7 @@ form{
     transition: all 0.8s ease;
 }
 
-.form-group textarea{
+.form-group textarea {
     width: 100%;
     background-color: transparent;
     outline: none;
@@ -1161,27 +1166,24 @@ form{
     padding-top: 40px;
 }
 
-.form-group input[type = "text"]:focus,
-.form-group input[type = "email"]:focus,
-.form-group textarea:focus{
+.form-group input[type="text"]:focus, .form-group input[type="email"]:focus, .form-group textarea:focus {
     border-color: #fea500;
     color: #fea500;
     font-size: 16px;
     font-weight: 600;
 }
 
-.form-group input::placeholder,
-.form-group textarea::placeholder{
-    transform:  translateY(0px) scale(1);
+.form-group input::placeholder, .form-group textarea::placeholder {
+    transform: translateY(0px) scale(1);
     transition: all 0.4s ease;
 }
 
-.form-group input:focus::placeholder, .form-group textarea:focus::placeholder{
+.form-group input:focus::placeholder, .form-group textarea:focus::placeholder {
     transform: translateY(-15px) scale(0.8);
     outline: none;
 }
 
-.submit-btn{
+.submit-btn {
     width: 170px;
     height: 45px;
     background-color: #fea500;
@@ -1197,7 +1199,8 @@ form{
     font-family: 'Montserrat-Regular';
     font-weight: 600;
 }
-.submit-btn:hover{
+
+.submit-btn:hover {
     background-color: transparent;
     border: 1px solid #fea500;
     color: #fff;
@@ -1207,13 +1210,13 @@ form{
 
 
 
-
 /*********************************          FOOTER SECTION        *************************/
-footer{
+footer {
     background-color: #383838;
     color: #fff;
 }
-footer .footer-wrapper{
+
+footer .footer-wrapper {
     max-width: 1100px;
     min-height: 120px;
     margin: 0 auto;
@@ -1223,16 +1226,19 @@ footer .footer-wrapper{
     align-items: center;
     justify-content: space-between;
 }
-.footer-wrapper .footer-logo{
+
+.footer-wrapper .footer-logo {
     width: 70px;
     height: 70px;
     margin-left: 30px;
 }
-.footer-wrapper .footer-logo img{
+
+.footer-wrapper .footer-logo img {
     height: 100%;
     width: 100%;
 }
-.footer-wrapper .footer-text{
+
+.footer-wrapper .footer-text {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1243,14 +1249,23 @@ footer .footer-wrapper{
     font-family: 'Montserrat-Regular';
     font-weight: 300;
 }
-.footer-wrapper .footer-text .copyright p{
+
+.footer-wrapper .footer-text .copyright p {
     margin-right: 20px;
 }
-.footer-wrapper .footer-text .copyright p a{
+
+.footer-wrapper .footer-text .copyright p a {
     font-size: 17px;
     color: #fea500;
     font-weight: bold;
 }
+
+
+
+
+
+
+
 
 
 
@@ -1293,7 +1308,7 @@ footer .footer-wrapper{
         width: 100%;
         padding: 0px 50px;
     }
-    .footer-text{
+    .footer-text {
         margin-left: 25px;
     }
 }
@@ -1382,14 +1397,14 @@ footer .footer-wrapper{
     .slider-wrapper {
         min-width: 100%;
     }
-    .footer-wrapper{
+    .footer-wrapper {
         justify-content: center !important;
         padding: 25px 10px;
     }
-    .footer-logo{
+    .footer-logo {
         margin-left: 0px !important;
     }
-    .footer-wrapper .footer-text{
+    .footer-wrapper .footer-text {
         justify-content: center;
         font-size: 13px;
     }
@@ -1542,11 +1557,11 @@ footer .footer-wrapper{
     }
     .slider-wrapper {
         height: 400px;
-    }    
+    }
     .north {
         min-height: 800px;
     }
-    .know-btn{
+    .know-btn {
         margin-top: 30px;
     }
     .developer p {
