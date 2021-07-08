@@ -255,6 +255,11 @@ main {
     padding: 0px 60px 100px 60px;
 }
 
+.management-wrapper .col-md-4{
+    padding-left: 7px !important;
+    padding-right: 7px !important;
+}
+
 .management-wrapper h2, .project-wrapper h2 {
     font-size: 24px;
     font-family: 'Montserrat-Regular';
@@ -1105,12 +1110,94 @@ main {
     font-weight: 600;
     color: #fea500;
 }
+form{
+    padding-bottom: 60px;
+}
+.form-group{
+    width: 100%;
+    padding: 0px 100px ;
+}
+.form-group .col-md-4{
+    padding-left: 7px !important;
+    padding-right: 7px !important;
+    margin-bottom: 15px !important;
+}
+.form-group input[type = "text"],
+.form-group input[type = "email"]{
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 1px solid #9c9c9c;
+    font-size: 14px;
+    font-family: 'Montserrat-Regular';
+    font-weight: 100;
+    width: 100%;
+    line-height: 1.5;
+    padding: 15px 10px;
+    color: #fff;
+    background: transparent;
+    transition: all 0.8s ease;
+}
+.form-group input[type = "text"]:focus,
+.form-group input[type = "email"]:focus,
+.form-group textarea:focus{
+    border-color: #fea500;
+    color: #fea500;
+    font-size: 16px;
+    font-weight: 600;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder{
+    transform:  translateY(0px) scale(1);
+    transition: all 0.4s ease;
+}
+.form-group input:focus::placeholder, .form-group textarea:focus::placeholder{
+    transform: translateY(-15px) scale(0.8);
+    outline: none;
+}
 
-
-
-
-
-
+.form-group textarea{
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 1px solid #9c9c9c;
+    font-size: 14px;
+    font-family: 'Montserrat-Regular';
+    font-weight: 100;
+    width: 100%;
+    min-height: 140px;
+    resize: none;
+    color: #fff;
+    margin: 0px 10px;
+    padding-top: 40px;
+}
+.submit-btn{
+    width: 170px;
+    height: 45px;
+    background-color: #fea500;
+    color: #fff;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    margin: 50px auto 0px auto;
+    transition: all 0.4s ease-in-out;
+    font-size: 14px;
+    font-family: 'Montserrat-Regular';
+    font-weight: 600;
+}
+.submit-btn:hover{
+    background-color: transparent;
+    border: 1px solid #fea500;
+    color: #fff;
+}
 
 
 
@@ -1150,6 +1237,10 @@ main {
     }
     .redressal-wrapper .redressal-text .address p, .redressal-wrapper .redressal-text p, .debenture-wrapper .debenture-text p {
         line-height: normal;
+    }
+    .form-group {
+        width: 100%;
+        padding: 0px 50px;
     }
 }
 
@@ -1360,7 +1451,11 @@ main {
     }
     .question-wrapper h1 {
         font-size: 24px;
-        padding: 50px 15px 40px 20px;
+        padding: 50px 15px 20px 20px;
+    }
+    .form-group {
+        width: 100%;
+        padding: 0px 30px;
     }
 }
 
@@ -1428,6 +1523,10 @@ main {
     }
     .question-wrapper h1 {
         font-size: 18px;
+    }
+    .form-group {
+        width: 100%;
+        padding: 0px 10px;
     }
 }
 
