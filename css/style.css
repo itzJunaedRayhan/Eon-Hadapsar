@@ -82,8 +82,8 @@ header {
     color: #fea800;
 }
 
-.menu-list li a:hover {
-    color: #fea800;
+.menu-list li .active:hover {
+    color: #fff;
 }
 
 .menu-list li a {
@@ -222,9 +222,9 @@ main {
 }
 
 .about-content h5 {
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Montserrat-Regular';
-    font-weight: bold;
+    font-weight: 500;
     padding-bottom: 15px;
 }
 
@@ -337,30 +337,42 @@ main {
     padding-right: 0px !important;
     padding-left: 0px !important
 }
-
 .north {
-    background-image: linear-gradient(rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.7)), url("../images/project-01.jpg");
+    background-image: url("../images/project-01.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     height: 685px;
     padding: 50px 20px 0px 50px;
     background-size: cover;
+    overflow: hidden;
+}
+.north:hover{
+    background-image: linear-gradient(rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.7)), url("../images/project-01.jpg");
+}
+.north-content{
+    position: absolute;
+    top: -100%;
+    transition: all 0.3s ease;
 }
 
-.north img {
+.north:hover .north-content{
+    top: 3%;
+}
+
+.north img, .yoopune img {
     height: 35px;
     width: 62px;
     margin: 15px 0px;
 }
 
-.north h3 {
+.north h3, .yoopune h3 {
     font-size: 22px;
     font-family: 'Montserrat-Regular';
     font-weight: bold;
     padding-bottom: 20px;
 }
 
-.north p {
+.north p, .yoopune p {
     font-size: 12px;
     line-height: 24px;
     font-family: 'Montserrat-Regular';
@@ -380,7 +392,6 @@ main {
     font-weight: 500;
     font-size: 15px;
     margin-top: 50px;
-    transition: all 0.5s ease;
 }
 
 .know-btn:hover {
@@ -398,18 +409,35 @@ main {
     padding: 50px 20px 0px 50px;
     background-size: cover;
     position: relative;
+    overflow: hidden;
+}
+
+.yoopune:hover{
+    background-image: linear-gradient(rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.7)), url("../images/project-02.jpg");
+}
+
+.yoopune-content{
+    position: absolute;
+    top: -100%;
+    transition: all 0.3s ease;
+}
+.yoopune:hover .yoopune-content{
+    top: 3%;
 }
 
 .yoopune img {
-    position: absolute;
-    bottom: 14%;
-    left: 17%;
     width: 80px;
     height: 25px;
-    opacity: 1;
+} 
+
+.yoopune p {
+    font-size: 12px;
+    line-height: 25px;
 }
 
-
+.yoopune .know-btn{
+    margin-top: 60px;
+}
 
 
 
@@ -625,6 +653,10 @@ main {
     padding-left: 5%;
 }
 
+.accordion-item-header:hover{
+    color: #fea500;
+}
+
 .accordion-item-header::after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -687,9 +719,6 @@ main {
     margin-left: -16px;
 }
 
-.accordion-item-body-content ul li:nth-child(2) {
-    color: #fea501;
-}
 
 
 
@@ -1107,7 +1136,7 @@ main {
 
 .question-wrapper h1 {
     font-size: 30px;
-    padding: 50px 50px 40px 50px;
+    padding: 50px 50px 40px 80px;
     font-family: 'Montserrat-Regular';
     font-weight: 600;
     color: #fea500;
@@ -1119,7 +1148,7 @@ form {
 
 .form-group {
     width: 100%;
-    padding: 0px 100px;
+    padding: 0px 75px;
 }
 
 .form-group .col-md-4 {
@@ -1168,7 +1197,7 @@ form {
 
 .form-group input[type="text"]:focus, .form-group input[type="email"]:focus, .form-group textarea:focus {
     border-color: #fea500;
-    color: #fea500;
+    color: #fff;
     font-size: 16px;
     font-weight: 600;
 }
@@ -1176,6 +1205,7 @@ form {
 .form-group input::placeholder, .form-group textarea::placeholder {
     transform: translateY(0px) scale(1);
     transition: all 0.4s ease;
+    color: #fff;
 }
 
 .form-group input:focus::placeholder, .form-group textarea:focus::placeholder {
@@ -1254,7 +1284,10 @@ footer .footer-wrapper {
     margin-right: 20px;
 }
 
-
+.footer-wrapper .footer-text .privacy-policy p a{
+    display: inline-block;
+    color: #fff !important;
+}
 
 
 
@@ -1377,13 +1410,17 @@ footer .footer-wrapper {
     .about-content p {
         text-align: justify;
     }
-    .north {
+    .north, .yoopune {
         padding: 15px 10px 0px 10px;
+        margin-bottom: 15px;
     }
-    .north h3 {
+    .north h3, .yoopune h3 {
         padding-bottom: 5px;
     }
     .north-btn {
+        margin-top: 5px;
+    }
+    .yoopune .know-btn {
         margin-top: 5px;
     }
     .developer {
@@ -1433,6 +1470,12 @@ footer .footer-wrapper {
     .contact-wrapper .contract h3 {
         font-size: 26px;
     }
+    .question-wrapper h1 {
+        padding: 50px 50px 40px 35px;
+    }
+    .form-group {
+        padding: 0px 30px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -1462,7 +1505,7 @@ footer .footer-wrapper {
         padding: 15px;
     }
     .about-content h5 {
-        font-size: 18px;
+        font-size: 14px;
         line-height: 30px;
     }
     .about-content p {
@@ -1470,9 +1513,7 @@ footer .footer-wrapper {
         line-height: 23px;
         padding-bottom: 15px;
     }
-    .yoopune {
-        display: none;
-    }
+    
     .management-wrapper, .project-wrapper, .developer-wrapper, .investors-wrapper, .debenture-wrapper, .redressal-wrapper, .image-gallery {
         padding: 0px 25px 0px 25px;
     }
