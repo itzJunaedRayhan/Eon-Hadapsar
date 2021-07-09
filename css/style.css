@@ -865,9 +865,13 @@ main {
     width: 150px;
     height: 100px;
     background-size: cover;
-    margin: 0;
+    margin: 6px 0px 6px 6px;
     flex: 1 1 150px;
     cursor: pointer;
+}
+
+.thumbnails label:last-child{
+    margin-right: 6px;
 }
 
 .image-1, .image-2, .image-3, .image-4, .image-5, .image-6, .image-7, .image-8, .image-9 {
@@ -912,6 +916,10 @@ main {
 
 .image-9, .thumbnails label[for="image9"] {
     background-image: url('../images/Gallery/Gallery-9.png');
+}
+
+.thumbnails label[for="image5"] {
+    border: 2px solid #fea500;
 }
 
 #image1:checked+.image-1, #image2:checked+.image-2, #image3:checked+.image-3, #image4:checked+.image-4, #image5:checked+.image-5, #image6:checked+.image-6, #image7:checked+.image-7, #image8:checked+.image-8, #image9:checked+.image-9 {
@@ -1631,6 +1639,21 @@ footer .footer-wrapper {
         width: 35px;
         line-height: 28px;
     }
+
+    .thumbnails label {
+        display: inline-block;
+        width: 150px;
+        height: 100px;
+        background-size: cover;
+        margin: 3px 0px 3px 3px;
+        flex: 1 1 150px;
+        cursor: pointer;
+    }
+    
+    .thumbnails label:last-child{
+        margin-right: 6px;
+    }
+
     .image-1 figcaption, .image-2 figcaption, .image-3 figcaption, .image-4 figcaption, .image-5 figcaption, .image-6 figcaption, .image-7 figcaption, .image-8 figcaption, .image-9 figcaption {
         font-size: 11px;
         padding: 5px 10px;
