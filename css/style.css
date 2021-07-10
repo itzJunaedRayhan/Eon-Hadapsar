@@ -2,7 +2,9 @@
     font-family: 'Montserrat-Regular';
     src: url(../fonts/Montserrat-Regular.ttf);
 }
-
+:root {
+    scroll-behavior: smooth !important;
+}
 .row {
     margin: 0px !important;
 }
