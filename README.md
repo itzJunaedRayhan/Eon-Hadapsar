@@ -7,14 +7,8 @@ Live Link:  https://web-genesis-eon-hadapsar-landing-page.netlify.app/  <br>
 Technologies I used in my Project:  <br>
 1. Html-CSS-Bootstrap
 2. JAVASCRIPT
-3. React Js
-4. Node Js
-5. MongoDB
-6. Express Js
-7. Material UI
-8. Redux
-9. Responsive Design
-10. JQuery Plugins 
+3. Responsive Design
+4. JQuery Plugins 
 
 Stay With us:  <br>
 Facebook: https://www.facebook.com/itzJunaedRayhan <br>
