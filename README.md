@@ -1,10 +1,10 @@
 Website Name: Eon-Hadapsar
 
 
-GitHub : https://github.com/itzJunaedRayhan/Eon-Hadapsar
-Live Link:  https://web-genesis-eon-hadapsar-landing-page.netlify.app/
+GitHub : https://github.com/itzJunaedRayhan/Eon-Hadapsar <br>
+Live Link:  https://web-genesis-eon-hadapsar-landing-page.netlify.app/  <br>
 
-Technologies I used in my Project:
+Technologies I used in my Project:  <br>
 1. Html-CSS-Bootstrap
 2. JAVASCRIPT
 3. React Js
